@@ -1,0 +1,55 @@
+@import "../import.scss";
+
+#hero {
+  background-image: url("/assets/img/lekar-search.jpg");
+}
+
+#vyhledavani {
+  .container {
+    flex-direction: column;
+    align-items: center;
+    @include resp("m") {
+      flex-direction: row;
+      align-items: center;
+    }
+  }
+
+  .wrap {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+
+    h2 {
+      border-bottom: 4px solid #2aadd4;
+      margin-bottom: 15px;
+    }
+
+    p {
+
+    }
+
+    &__box {
+      border: 1.5px solid #2aadd4;
+      margin-top: 24px;
+      display: flex;
+      flex-direction: column;
+      padding: 24px 16px;
+      border-radius: 16px;
+      -webkit-box-shadow: 0 0 24px 0 rgba(55, 200, 250, 0.5);
+      -moz-box-shadow: 0 0 24px 0 rgba(55, 200, 250, 0.5);
+      box-shadow: 0 0 24px 0 rgba(55, 200, 250, 0.15);
+      width: 100%;
+    }
+
+    h3 {
+      padding-bottom: 16px;
+      border-bottom: 2px solid #2aadd4;
+      margin-bottom: 20px;
+    }
+
+    p {
+      margin-top: 20px;
+    }
+  }
+}
